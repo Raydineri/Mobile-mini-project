@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/loginBkColor"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="92dp"
+        android:hint="Enter Nom Cours"
+        app:layout_constraintEnd_toEndOf="@+id/hours"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/hours"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/enseg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="16dp"
+        android:text="enseignant"
+        app:layout_constraintBottom_toTopOf="@+id/spinner_teach"
+        app:layout_constraintStart_toStartOf="@+id/spinner_teach" />
+
+    <Button
+        android:id="@+id/button_add_course"
+        android:layout_width="189dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="201dp"
+        android:layout_marginBottom="199dp"
+        android:backgroundTint="#FF9800"
+        android:text="AJOUTER COURS"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/radio_button_atelier"
+        app:layout_constraintVertical_bias="0.437" />
+
+    <Spinner
+        android:id="@+id/spinner_teach"
+        android:layout_width="347dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/button_add_course"
+        app:layout_constraintEnd_toEndOf="@+id/button_add_course"
+        app:layout_constraintHorizontal_bias="0.579"
+        app:layout_constraintStart_toEndOf="@+id/button_add_course" />
+
+    <RadioButton
+        android:id="@+id/radio_button_cours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="129dp"
+        android:layout_marginEnd="88dp"
+        android:layout_marginBottom="129dp"
+        android:text="Cours"
+        app:layout_constraintBottom_toBottomOf="@+id/spinner_teach"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name"
+        app:layout_constraintVertical_bias="0.444" />
+
+    <Button
+        android:id="@+id/button_list_courses"
+        android:layout_width="0dp"
+        android:layout_height="79dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="109dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="108dp"
+        android:backgroundTint="#9C27B0"
+        android:text="LISTER COURS"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/button_add_course"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_teach"
+        app:layout_constraintVertical_bias="0.545" />
+
+    <EditText
+        android:id="@+id/hours"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Enter Nombre Heure"
+        app:layout_constraintEnd_toEndOf="@+id/spinner_teach"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/spinner_teach"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+
+    <RadioButton
+        android:id="@+id/radio_button_atelier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="102dp"
+        android:layout_marginBottom="60dp"
+        android:text="Atelier"
+        app:layout_constraintBottom_toTopOf="@+id/enseg"
+        app:layout_constraintEnd_toStartOf="@+id/radio_button_cours"
+        app:layout_constraintStart_toStartOf="@+id/type"
+        app:layout_constraintTop_toBottomOf="@+id/type" />
+
+    <RadioGroup
+        android:id="@+id/radio_group_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/radio_button_cours"
+        app:layout_constraintEnd_toStartOf="@+id/radio_button_cours">
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text=""
+        app:layout_constraintEnd_toStartOf="@+id/hours"
+        app:layout_constraintStart_toStartOf="@+id/hours"
+        app:layout_constraintTop_toBottomOf="@+id/hours" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/loginBkColor">
+
+    <TextView
+        android:id="@+id/ListUsers"
+        android:layout_width="401dp"
+        android:layout_height="wrap_content"
+
+        android:background="#9C27B0"
+        android:padding="10dp"
+        android:text="Liste Des Users"
+        android:textColor="@android:color/white"
+
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewUsers"
+        android:layout_width="396dp"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical" />
+</LinearLayout>

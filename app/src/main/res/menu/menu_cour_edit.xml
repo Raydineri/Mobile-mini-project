@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+        <item
+            android:id="@+id/AjoutMenu"
+            android:title="Ajouter"
+            app:showAsAction="never" />
+
+    <item
+        android:id="@+id/ListerMenu"
+        android:title="Lister Tous"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/ViderMenu"
+        android:title="Vider la liste"
+        app:showAsAction="never" />
+
+    </menu>

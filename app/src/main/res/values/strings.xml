@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">TP</string>
+    <string name="liste_enseignants">liste_enseignants</string>
+    <string name="open_drawer">open</string>
+    <string name="close_drawer">close</string>
+
+
+    <string name="register">REGISTER</string>
+    <string name="login_email_hint">Email</string>
+    <string name="login_password_hint">Password</string>
+    <string name="signup_login_hint">Sign In here </string>
+    <string name="login_signup_hint">Sign Up here </string>
+
+        <string name="about_text">
+                          Soyer le bienvenue "\n"
+            dans l application  My App de gestion des cours , tâches , enseignants  et  utilisateurs !
+        </string>
+    </resources>

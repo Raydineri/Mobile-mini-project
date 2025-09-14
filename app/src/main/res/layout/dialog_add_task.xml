@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/loginBkColor">
+
+    <EditText
+        android:id="@+id/taskTitleInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Task Title"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/taskDescriptionInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Task Description"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/taskDueDateInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Due Date (YYYY-MM-DD)"
+        android:inputType="date" />
+
+    <EditText
+        android:id="@+id/taskPriorityInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Priority (1-5)"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/addTaskButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Task" />
+</LinearLayout>
