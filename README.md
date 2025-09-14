@@ -128,4 +128,4 @@ This is a personal educational project. Feel free to fork and create your own ve
 This project is developed for educational purposes.
 
 # Mobile-mini-project
-Developed by: Rayen Ben Othman / Iset Rades-2025 Mobile Development
+Developed by: Rayen Ben Othman / Iset Rades-2025-L3DSI2
